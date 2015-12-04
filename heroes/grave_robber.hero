@@ -68,5 +68,5 @@ skill
 		ally=xxxx
 		type=bc
 		self=+d+c
-		blight=+
-		bleed=+
+		blight=-
+		bleed=-

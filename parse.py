@@ -1,6 +1,7 @@
 #coding: gbk
 
 import os
+import attr
 
 HERO_FILE_EXT = '.hero'
 
@@ -9,7 +10,7 @@ def parse_heroes(path):
 	for fname in os.listdir(path):
 		if not fname.endswith(HERO_FILE_EXT):
 			continue
-		heroes.append(parse_hero(fname))
+		heroes.append(parse_hero(os.path.join(path, fname)))
 	return heroes
 
 def parse_hero(fname):
@@ -45,4 +46,4 @@ def parse_line(hero, path, line):
 		path.append(key)
 	else:
 		key, value = info
-		cur[key] = value
+		cur[key] = attr.value(path, key, value)
