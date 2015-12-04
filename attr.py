@@ -38,7 +38,15 @@ class Range(Attr):
 		return sum(self.value) / 2
 
 class Pos(Attr):
-	pass
+	def total(self):
+		if '*' in self.value:
+			n = 0
+			for c in self.value:
+				if c == '*':
+					n += 1
+			return n
+		else:
+			return 1
 
 class Set(Attr):
 	def __init__(self, ab, val):

@@ -2,18 +2,20 @@
 
 import os
 import attr
+import hero
 
-HERO_FILE_EXT = '.hero'
+FILE_EXT = '.hero'
 
-def parse_heroes(path):
-	heroes = []
+def parse_path(path):
+	heroes = {}
 	for fname in os.listdir(path):
-		if not fname.endswith(HERO_FILE_EXT):
+		if not fname.endswith(FILE_EXT):
 			continue
-		heroes.append(parse_hero(os.path.join(path, fname)))
+		name = os.path.splitext(fname)[0]
+		heroes[name] = hero.Hero(name, parse_file(os.path.join(path, fname)))
 	return heroes
 
-def parse_hero(fname):
+def parse_file(fname):
 	f = open(fname, 'rb')
 	content = f.read()
 	f.close()
