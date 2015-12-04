@@ -1,0 +1,67 @@
+attr
+	hp=27
+	dodge=0
+	prot=0
+	spd=1
+	acc=0
+	crit=7.5
+	dmg=4-9
+
+skill
+	sniper_shot
+		pos=ooxx
+		enemy=xooo
+		type=r
+		acc=90
+		dmg=100
+		crit=5
+		attack=m
+
+	suppressing_fire
+		pos=ooxx
+		enemy=x***
+		type=r
+		acc=80
+		dmg=20
+		crit=-5
+		target=-aa
+
+	snipers_mark
+		pos=ooxx
+		enemy=xooo
+		type=r
+		acc=100
+		dmg=0
+		mark=+
+
+	bola
+		pos=ooxx
+		enemy=**xx
+		type=r
+		acc=90
+		dmg=50
+		crit=5
+		move=>1
+
+	blindfire
+		pos=oooo
+		enemy=oooo
+		type=r
+		acc=80
+		dmg=90
+		self=+c
+
+	battlefield_bandage
+		pos=ooxx
+		ally=xooo
+		type=h
+		target=c
+		heal=2-3
+
+	rallying_flare
+		pos=ooxx
+		ally=oooo
+		type=h
+		stun=-
+		mark=-
+		torch=3

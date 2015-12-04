@@ -1,0 +1,63 @@
+attr
+	hp=33
+	dodge=5
+	prot=0
+	spd=1
+	acc=0
+	crit=5
+	dmg=6-12
+
+skill
+	smite
+		pos=xxoo
+		enemy=ooxx
+		type=m
+		acc=80
+		dmg=100
+		attack=u
+
+	zealous_accusation
+		pos=xxoo
+		enemy=**xx
+		type=r
+		acc=80
+		dmg=60
+
+	stunning_blow
+		pos=xxoo
+		enemy=ooxx
+		type=m
+		acc=85
+		dmg=33
+		stun=+
+
+	bulwark_of_faith
+		pos=xxoo
+		ally=xxxx
+		type=b
+		self=+d
+		mark=+
+
+	battle_heal
+		pos=xxoo
+		ally=xooo
+		type=h
+		heal=2-4
+
+	holy_lance
+		pos=ooox
+		enemy=xxoo
+		type=m
+		acc=75
+		dmg=100
+		crit=10
+		attack=u
+		move=+1
+
+	inspiring_cry
+		pos=oooo
+		ally=oooo
+		type=h
+		heal=1
+		stress=-6
+		torch=5

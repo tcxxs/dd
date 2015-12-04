@@ -1,0 +1,49 @@
+attr
+	hp=33
+	dodge=5
+	prot=0
+	spd=1
+	acc=0
+	crit=5
+	dmg=6-12
+
+skill
+	name
+		pos=xxoo
+		ally=ooxx, xxxx(self)
+		enemy=ooxx
+		type=m(m melee, r range, b buff, h heal, c cure)
+		acc=100
+		dmg=100
+		crit=10
+		attack=h(* random, m mark, s stun, h human, u unholy, b beast)
+		self=+a(attack, + buff, - debuff), d(defence), u(useful)
+		target=+a(attack, + buff, - debuff), d(defence), u(useful)
+		move=+1(+/- self move, + to right), <1(<> target move, < to left), *(random)
+		stun=+(affect), -(cure)
+		blight=2/3(dmg/round), -(cure)
+		bleed=2/3(dmg/round), -(cure)
+		mark=+(affect), -(cure)
+		heal=1-10
+		stress=10
+		torch=10
+
+	name
+		pos=
+		enemy=
+		type=
+		acc=
+		dmg=
+		crit=
+		attack=
+		self=
+		target=
+		move=
+		stun=
+		blight=
+		bleed=
+		mark=
+		heal=
+		stress=
+		torch=
+

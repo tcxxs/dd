@@ -1,0 +1,72 @@
+attr
+	hp=20
+	dodge=10
+	prot=0
+	spd=8
+	acc=0
+	crit=5
+	dmg=4-9
+
+skill
+	pick_to_the_face
+		pos=xooo
+		enemy=ooox
+		type=m
+		acc=90
+		dmg=100
+		crit=5
+
+	lunge
+		pos=ooxx
+		enemy=ooox
+		type=m
+		acc=90
+		dmg=140
+		crit=10
+		move=+2
+
+	flashing_daggers
+		pos=ooox
+		enemy=x**x
+		type=r
+		acc=90
+		dmg=67
+		crit=5
+
+	shadow_fade
+		pos=xxoo
+		enemy=ooxx
+		type=m
+		acc=90
+		dmg=0
+		self=+d
+		move=-1
+		stun=+
+
+	thrown_dagger
+		pos=ooox
+		enemy=xooo
+		type=r
+		acc=80
+		dmg=100
+		crit=10
+		self=+c
+		target=-d
+
+	poison_dart
+		pos=ooxx
+		enemy=oooo
+		type=r
+		acc=95
+		dmg=10
+		crit=5
+		target=-d
+		blight=3/3
+
+	toxin_trickery
+		pos=oooo
+		ally=xxxx
+		type=bc
+		self=+d+c
+		blight=+
+		bleed=+

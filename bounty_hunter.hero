@@ -1,0 +1,70 @@
+attr
+	hp=25
+	dodge=5
+	prot=0
+	spd=4
+	acc=0
+	crit=5
+	dmg=5-10
+
+skill
+	collect_bounty
+		pos=xooo
+		enemy=ooxx
+		type=m
+		acc=80
+		dmg=100
+		crit=5
+		attack=mh
+
+	mark_for_death
+		pos=oooo
+		enemy=oooo
+		type=r
+		acc=100
+		dmg=0
+		mark=+
+
+	come_hither
+		pos=oooo
+		enemy=xxoo
+		type=r
+		acc=90
+		dmg=33
+		move=<2
+
+	uppercut
+		pos=xxoo
+		enemy=ooxx
+		type=m
+		acc=80
+		dmg=33
+		move=>2
+		stun=+
+
+	flashbang
+		pos=ooox
+		enemy=oooo
+		type=r
+		acc=80
+		dmg=0
+		move=*
+		stun=+
+
+	finish_him
+		pos=xooo
+		enemy=oooo
+		type=m
+		acc=80
+		dmg=100
+		crit=2
+		attack=s
+
+	hook_and_slice
+		pos=ooox
+		enemy=xxoo
+		type=r
+		acc=85
+		dmg=15
+		crit=2
+		bleed=3/3

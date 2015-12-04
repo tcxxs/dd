@@ -1,0 +1,65 @@
+attr
+	hp=21
+	dodge=10
+	prot=0
+	spd=6
+	acc=0
+	crit=5
+	dmg=4-7
+
+skill
+	hounds_rush
+		pos=ooox
+		enemy=oooo
+		type=r
+		acc=85
+		dmg=100
+		crit=2
+		attack=mb
+		bleed=1/3
+
+	hounds_harry
+		pos=oooo
+		enemy=****
+		type=r
+		acc=80
+		dmg=20
+		bleed=1/3
+
+	whistle
+		pos=ooox
+		enemy=oooo
+		type=r
+		acc=100
+		dmg=0
+		target=-d
+		mark=+
+
+	howl
+		pos=ooxx
+		ally=****
+		type=h
+		stress=3
+
+	guard_dog
+		pos=oooo
+		ally=oooo
+		type=b
+		self=+d
+		target=+c
+
+	lick_wounds
+		pos=ooox
+		ally=xxxx
+		type=h
+		heal=5
+
+	blackjack
+		pos=xxoo
+		enemy=ooox
+		type=m
+		acc=80
+		dmg=50
+		crit=1
+		stun=+
+

@@ -1,0 +1,67 @@
+attr
+	hp=22
+	dodge=10
+	prot=0
+	spd=5
+	acc=0
+	crit=5
+	dmg=5-10
+
+skill
+	wicked_slice
+		pos=xooo
+		enemy=ooxx
+		type=m
+		acc=85
+		dmg=100
+		crit=5
+
+	pistol_shot
+		pos=ooox
+		enemy=xooo
+		type=r
+		acc=80
+		dmg=75
+		crit=10
+
+	point_blank_shot
+		pos=xxxo
+		enemy=oxxx
+		type=r
+		acc=80
+		dmg=150
+		move=-1>1
+
+	grapeshot_blast
+		pos=xoox
+		enemy=***x
+		type=r
+		acc=75
+		dmg=40
+		crit=-7
+
+	tracking_shot
+		pos=oooo
+		enemy=xooo
+		type=r
+		acc=80
+		dmg=20
+		self=+a+a+c
+
+	duelists_advance
+		pos=ooox
+		enemy=oooo
+		type=m
+		acc=80
+		dmg=80
+		crit=2
+		move=+1
+
+	open_vein
+		pos=xooo
+		enemy=ooxx
+		type=m
+		acc=85
+		dmg=85
+		bleed=2/3
+

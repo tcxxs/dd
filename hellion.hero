@@ -1,0 +1,69 @@
+attr
+	hp=26
+	dodge=10
+	prot=0
+	spd=4
+	acc=0
+	crit=2.5
+	dmg=6-12
+
+skill
+	wicked_hack
+		pos=xxoo
+		enemy=ooxx
+		type=m
+		acc=80
+		dmg=100
+		crit=5
+
+	iron_swan
+		pos=xxxo
+		enemy=xxxo
+		type=m
+		acc=80
+		dmg=100
+		crit=5
+
+	barbaric_yamp
+		pos=xxoo
+		enemy=**xx
+		type=m
+		acc=90
+		dmg=0
+		self=-a-d
+		stun=+
+	if_it_bleeds
+		pos=xooo
+		enemy=xoox
+		type=m
+		acc=85
+		dmg=100
+		bleed=1/3
+
+	breakthrough
+		pos=oooo
+		enemy=***x
+		type=m
+		acc=75
+		dmg=45
+		self=-a-d
+
+	adrenaline_rush
+		pos=oooo
+		ally=xxxx
+		type=bc
+		self=+a+c
+		blight=-
+		bleed=-
+		heal=1
+
+	bleed_out
+		pos=xxxo
+		enemy=oxxx
+		type=m
+		acc=80
+		dmg=115
+		crit=5
+		self=-a-d
+		bleed=3/3
+
